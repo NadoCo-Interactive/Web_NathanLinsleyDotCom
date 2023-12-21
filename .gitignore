@@ -129,3 +129,4 @@ dist
 bin/
 debug/
 obj/
+.vs/
