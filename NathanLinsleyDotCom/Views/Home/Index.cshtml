@@ -2,7 +2,58 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<head>
+  <style>
+        .container2 {
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            height: 700px;
+            background: linear-gradient(to bottom, #fff, #ddd 25%,#ddd 75%, #fff);
+        }
+
+        .button {
+          border-radius: 8px;
+          border: 1px solid white;
+          padding: 10px;
+          width: 300px;
+          height: 50px;
+            color: white;
+            text-shadow: 1px 1px 5px #fff;
+            background: #111144;
+        }
+
+        .button:hover {
+          animation: buttonBorder 0.25s forwards, buttonText 0.05s forwards;
+                
+        }
+
+        @@keyframes buttonText {
+            from {
+                font-size: 16px;
+            }
+
+            to {
+                font-size: 18px;
+            }
+        }
+        @@keyframes buttonBorder {
+
+            to {
+                border-radius: 100px;
+            }
+        }
+  </style>
+</head>
+<div class="container2">
+  <div style="flex: 1; padding: 100px; padding-right: 0px"> 
+        <h1 class="display-1">Hey there!</h1>
+        <p class="lead">I'm Nathan. I'm a Full-Stack Engineer from Sydney and I build cool sh*t! ;)</p>
+        <button class="button">Let's Chat!</button>
+  </div>
+    <div style="flex: 1; padding: 100px;">
+    <img src="./img/nathan_transparent.png" style="max-width: 400px"/>
+  </div>
+  
+
 </div>
